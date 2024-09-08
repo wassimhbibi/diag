@@ -1,0 +1,100 @@
+<section  class="banner-section section banner-1 video-banner pb-0" id ="banner"  >
+  <img src="/assets/images/background-section-1.jpg" class="video">
+  <div class="container">
+    <div class="row align-items-center" id="sec" >
+      <div class="col-lg-5 section-container">
+        <div class="half-width-tabs">
+          <a
+            class="left-tab"
+            [ngClass]="{ active: activeTab === 'vente-location' }"
+            (click)="setActiveTab('vente-location')"
+          >
+            Vente ou location
+          </a>
+          <a
+            class="right-tab"
+            
+            [ngClass]="{ active: activeTab === 'travaux-renovation' }"
+            (click)="setActiveTab('travaux-renovation')"
+          >
+            Travaux ou rénovation
+          </a>
+        </div>
+        <div *ngIf="activeTab === 'vente-location'">
+        <div>
+        <div class="content">
+          <h2>Vos diagnostics immobiliers</h2>
+          <p class="description">
+            Envisager sereinement votre transaction immobilière avec nos experts
+            certifiés.
+          </p>
+        </div>
+        <div class="buttons">
+            <button class="btn vente-btn" routerLink="/pages/contact-us">Vente &rarr;</button>
+            <button class="btn location-btn" routerLink="/pages/contact-us">Location &rarr;</button>
+          </div>
+          <a class="learn-more"  routerLink="/pages/faqs">>En savoir plus</a>
+
+      </div>
+</div>
+
+      <div *ngIf="activeTab === 'travaux-renovation'">
+        <div class="content">
+          <h2>Les diagnostics spécifiques</h2>
+          <p class="description">
+            Retrouvez nos diagnostics spécifiques pour vos travaux de rénovation ou avant-démolition.
+          </p>
+        </div>
+        <div class="buttons2">
+          <button class="btn contacter-btn" routerLink="/pages/contact-us">Contactez-nous &rarr;</button>
+        </div>
+        <a class="learn-more"  routerLink="/pages/blog">>En savoir plus</a>
+      </div>
+      
+       
+      </div>
+      
+    
+      <div class="col-lg-5">
+        <div class="text-lg-end text-center mt-4 mt-lg-0">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-pattern-1" >
+  <img src="./assets/images/patterns/7.png" alt="img" class="patterns-7">
+  <img src="./assets/images/patterns/2.png" alt="img" class="patterns-1 op-1">
+  <img src="./assets/images/patterns/9.png" alt="img" class="patterns-3 filter-invert sub-pattern-2 op-2">
+  <div class="container">
+      <div class="heading-section">
+          <div class="heading-title">Vous aider à mieux vendre mieux acheter et mieux habiter.</div>
+      </div>
+      <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="card pricing-card border mb-lg-0">
+                <div class="card-body">
+               
+                    
+                    <img src="/assets/images/qualite.jpg" id="img">
+                    <p class="mb-4">Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores rerum hic tenetur.</p>
+                    <a routerLink="/cloud/cloud" class="btn contacter-btn">Get Started Now</a>
+                </div>
+            </div>
+        </div>
+          <div class="col-lg-6">
+              <div class="card pricing-card border mb-lg-0">
+                  <div class="card-body">
+                 
+                      
+                      <img src="/assets/images/satisfaction.jpg" id="img">
+                      <p class="mb-4">Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores rerum hic tenetur.</p>
+                      <a routerLink="/cloud/cloud" class="btn contacter-btn">Get Started Now</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+

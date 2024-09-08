@@ -1,0 +1,108 @@
+.banner-section{
+    height: 80vh !important;
+    width: 100%;
+}
+
+
+.title{
+    background-color: rgba(235, 110, 131, 0.803);
+    width: fit-content;
+    font-size: 43px;
+}
+#banner{
+    background-color: rgb(209, 68, 141); padding: 0; margin: 0; width: fit-content;
+    transform: translateY(380%) !important;
+
+}
+.banner-row{
+    margin-top: 350px !important;
+    transform: translateX(-6%);
+}
+
+.ctnr-1{
+    padding-left: 80px !important;
+    padding-right: 80px !important;
+}
+
+.linkk{
+    margin-left: 190px;
+}
+
+.imgg{
+    height: 250px !important;
+}
+
+.a-link{
+    border-bottom: 1px solid black;
+}
+
+.a-link:hover{
+    color: rgb(231, 95, 118) !important;
+    border-bottom: 1px solid rgb(231, 95, 118);
+
+}
+
+.card-body{
+    background-color: rgb(231, 231, 231) !important;
+}
+
+.iteem{
+    max-width: 500px;
+}
+
+.inpt{
+    background-color: rgb(233, 233, 233);
+}
+
+.input-checkbox{
+    margin-right: 10px;
+}
+
+fieldset{
+    margin-bottom: 20px;
+}
+
+legend{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.btn-lg{
+    background-color:   rgb(209, 68, 141) !important;
+}
+
+.form-contact{
+    margin-bottom: 100px;
+}
+
+.card-body{
+    background-color: transparent !important;
+}
+
+.input-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+  }
+  .input-checkbox:checked {
+    background-color:   rgb(209, 68, 141);
+
+    border-color: pink;
+  }
+  
+  .input-checkbox:checked::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }

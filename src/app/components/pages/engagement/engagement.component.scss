@@ -1,0 +1,51 @@
+.banner-section{
+    height: 80vh !important;
+    width: 100%;
+}
+
+
+.title{
+    background-color: rgba(235, 110, 131, 0.803);
+    width: fit-content;
+    font-size: 43px;
+}
+
+.banner-row{
+    transform: translateY(300%)!important;
+    transform: translateX(-6%);
+}
+
+.contentt-1{
+    font-size: 18px;
+}
+
+.icon-div{
+    text-align: left;
+}
+.icon{
+    font-size: 90px; color: rgb(209, 68, 141);
+}
+
+.h5-sec{
+    text-align: left;
+
+}
+
+.p-sec{
+    text-align: left;
+
+}
+
+#span{
+    color: rgb(209, 68, 141);
+}
+
+
+.btn-div{
+    display: flex; align-items: center; justify-content: center; margin-top: 20px;
+}
+
+.btn{
+    margin-right: 120px; padding: 15px 60px; background-color: rgb(209, 68, 141); font-size: 20px;
+    color: white;
+}

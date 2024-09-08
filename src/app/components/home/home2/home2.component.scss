@@ -1,0 +1,123 @@
+.section-container {
+    background-color: white;
+    margin: auto;
+    max-width: 450px; 
+    padding-bottom: 20px;
+}
+.banner-section{
+    height: 140vh !important;
+}
+
+.half-width-tabs {
+    display: flex;
+    margin-bottom: 20px;
+}
+#sec{
+    transform: translateY(40%);
+    
+    // transform: translateX(-3%);
+}
+#img{
+    width: 100%;transform: translateX(1%);margin-bottom: 10px;
+}
+.content{
+    margin-bottom: 15px;
+    text-align: left;
+    padding-left: 22px;
+    
+}
+.half-width-tabs a {
+    flex: 1;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .left-tab.active {
+    background-color: rgb(209, 68, 141);
+  }
+
+  .left-tab.active,  .right-tab.active {
+    
+    transition: 1s;
+  }
+  
+  .right-tab.active {
+    background-color: rgb(209, 68, 141);
+  }
+  
+  .left-tab {
+    background-color: rgb(75, 75, 75);
+    margin-left: -13px;
+    cursor: pointer;
+  }
+  
+  .right-tab {
+    background-color: rgb(75, 75, 75);
+    margin-right: -13px;
+    cursor: pointer;
+
+  }
+  
+
+h2 {
+    font-size: 24px;
+    color: black;
+}
+
+.description {
+    color: black;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 28px;
+}
+
+
+.buttons2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    padding-left: 15px;
+}
+
+/* Default button styles */
+.btn {
+    background-color: black;
+    color: white;
+    padding: 10px 55px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Change color on hover for Vente button */
+.vente-btn:hover {
+    background-color: rgb(209, 68, 141);
+}
+#banner{
+    height: 550px;
+}
+/* Change color on hover for Location button */
+.location-btn:hover {
+    background-color: rgb(209, 68, 141);
+}
+.contacter-btn:hover {
+    background-color: rgb(209, 68, 141);
+}
+
+
+
+.learn-more {
+    color: black;
+    font-size: 14px;
+    margin-left: 24px;
+    border-bottom: 1px solid black;
+
+}
+

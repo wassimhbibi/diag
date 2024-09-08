@@ -1,0 +1,244 @@
+<section class="banner-section section video-banner pb-0">
+    <video src="./assets/images/video/video-1.mp4" class="video" loop muted autoplay></video>
+    <div class="container">
+        <div class="row" style="margin: 0;">
+            <div class="col-md-12 text-center" style="padding: 0;">
+                <p class="mb-1 content-1 h6" id="banner">Assainissement</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 feature-client-bg">
+                <h4 class="mb-3">
+                    <span>Chaque logement est unique</span>
+                </h4>
+                <p class="mb-4 contentt-1">
+                    Chaque logement possède une mémoire familiale ou personnelle. Connaître le client et l’histoire de son bien est primordial avant de réaliser les diagnostics nécessaires. Comme chaque diagnostic est différent, il est essentiel d’échanger, de prendre le temps autour d’un thé ou d’un café pour expliquer la bien-fondé de notre intervention. Notre métier est technique et complexe : Diagadom s’engage à apporter des solutions en délivrant un dossier de diagnostic technique (DDT) clair et compris de tous.
+                </p>
+            </div>
+            <div class="col-lg-6 text-center">
+                <img src="/assets/images/assainissement.jpg" class="img-fluid" alt="img" width="450">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container my-5">
+    <!-- Section for Les eaux usées -->
+    <div class="row align-items-center my-5">
+        <div class="col-md-12 d-flex align-items-center justify-content-center">
+            <div class="icon" id="ic">
+                <i class="bi bi-droplet-half"></i>
+            </div>
+            <div>
+                <h4>Les eaux usées</h4>
+                <p id="pp">
+                    Les eaux usées domestiques sont essentiellement porteuses de pollution organique. En plus des matières organiques azotées ou phosphorées, les eaux usées industrielles peuvent contenir des produits toxiques, des solvants, des métaux lourds, des micropolluants organiques, des hydrocarbures. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section for Les eaux pluviales -->
+    <div class="row align-items-center my-5">
+        <div class="col-md-12 d-flex align-items-center justify-content-center">
+            <div class="icon" id="ic">
+                <i class="bi bi-cloud-drizzle"></i>
+            </div>
+            <div>
+                <h4>Les eaux pluviales</h4>
+                <p id="pp">
+                    Les eaux pluviales sont chargées d’impuretés au contact de l’air (fumées industrielles), et aussi à cause du ruissellement des résidus déposés sur les toits et les chaussées des villes.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section for Quelle est la législation en vigueur -->
+    <div class="row align-items-center my-5">
+        <div class="col-md-12 d-flex align-items-center justify-content-center">
+            <div class="icon" id="ic">
+                <i class="bi bi-chat-dots"></i>
+            </div>
+            <div>
+                <h4>Quelle est la législation en vigueur ?</h4>
+                <p id="pp">
+                    La croissance démographique s’accompagne d’un développement des activités humaines ayant pour conséquence une production plus importante de rejets polluants. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section for Notre intervention à domicile -->
+    <div class="row align-items-center my-5">
+        <div class="col-md-12 d-flex align-items-center justify-content-center">
+            <div class="icon" id="ic"
+        >
+                <i class="bi bi-briefcase"></i>
+            </div>
+            <div>
+                <h4>Notre intervention à domicile</h4>
+                <p id="pp">
+                    Notre intervention consiste à réaliser différents tests sur les points d’eaux usées et les évacuations pluviales de votre habitation. Ces tests sont réalisés à l’aide de colorants ou de fumigènes dans vos installations.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="container my-5">
+ 
+        <!-- Stepper -->
+        <div class="stepper mb-4">
+            <div [class.active]="currentStep >= 1" class="step-number" id="step-1">1</div>
+            <div [class.active]="currentStep > 1" class="line"></div>
+            <div [class.active]="currentStep >= 2" class="step-number" id="step-2">2</div>
+            <div [class.active]="currentStep > 2" class="line"></div>
+            <div [class.active]="currentStep >= 3" class="step-number" id="step-3">3</div>
+            <div [class.active]="currentStep > 3" class="line"></div>
+            <div [class.active]="currentStep >= 4" class="step-number" id="step-4">4</div>
+            <div [class.active]="currentStep > 4" class="line"></div>
+            <div [class.active]="currentStep >= 5" class="step-number" id="step-5">5</div>
+        </div>
+     
+
+        <!-- Form sections -->
+        <form id="multiStepForm">
+            <!-- Step 1 -->
+            <div class="step" [class.active]="currentStep === 1">
+                <h4>Informations relatives au demandeur</h4>
+                <div class="row mb-3">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Prénom">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Nom">
+                    </div>
+                </div>
+                <input type="text" class="form-control mb-3" placeholder="Numéro de téléphone">
+                <input type="email" class="form-control mb-3" placeholder="Adresse e-mail">
+                <button type="button" id="btnn2"  class="btn btn"(click)="nextStep()">Suivant ></button>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="step" [class.active]="currentStep === 2">
+                <h4>Informations relatives au propriétaire</h4>
+                <ng-select>
+                    <ng-option value="0">Aucun(e)</ng-option>
+                    <ng-option value="2">France</ng-option>
+         
+                </ng-select>
+               
+                <input type="text" class="form-control mb-3" placeholder="Numéro de telephone">
+                <input type="text" class="form-control mb-3" placeholder="Adresse e-mail">
+                <button type="button"id="btnn" class="btn btn" (click)="prevStep()">Retour</button>
+                <button type="button" id="btnn2" class="btn btn" (click)="nextStep()">Suivant ></button>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="step" [class.active]="currentStep === 3">
+                <h2>Informations relatives au(x) bien(s) à contrôler</h2>
+                <h4>Adresse du bien à contrôler</h4>
+                <input type="text" class="form-control mb-3" placeholder="Adresse (Ligne 1)">
+                <input type="text" class="form-control mb-3" placeholder="Adresse (Ligne 2)">
+                
+                <div class="row mb-3">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Ville">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Code Postal">
+                    </div>
+                </div>
+                
+                <fieldset>
+                    <legend id="scal">Type d'habitation : </legend>
+                    <div>
+                        <input type="radio" id="huey" name="drone" value="huey" checked />
+                        <label for="huey" id="scal">Maison</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="dewey" name="drone" value="dewey" />
+                        <label for="dewey" id="scal">Appartement</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="louie" name="drone" value="louie" />
+                        <label for="louie" id="scal">Autre</label>
+                    </div>
+                </fieldset>
+                
+                <!-- Checkbox for co-propriété -->
+                <div>
+                    <input type="checkbox" id="scales" name="scales" [(ngModel)]="isCoPropriete" />
+                    <label for="scales" id="scal">Il s'agit d'une co-propriété</label>
+                </div>
+            
+                <!-- Additional form fields appear only when co-propriété is checked -->
+                <div *ngIf="isCoPropriete">
+                    <div class="form-group">
+                        <label>Numéro(s) de lot(s) s'il s'agit d'une copropriété</label>
+                        <input type="text" class="form-control" placeholder="Numéro(s) de lot(s)">
+                    </div>
+            
+                    <h4>Coordonnées du syndic (s'il s'agit d'une copropriété)</h4>
+                    
+                    <div class="row mb-3">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Nom">
+                        </div>
+                        <div class="col">
+                            <input type="email" class="form-control" placeholder="Courriel">
+                        </div>
+                        <div class="col">
+                            <input type="tel" class="form-control" placeholder="Téléphone">
+                        </div>
+                    </div>
+            
+                    <input type="text" class="form-control mb-3" placeholder="Adresse (ligne 1)">
+                    <input type="text" class="form-control mb-3" placeholder="Adresse (ligne 2)">
+                    
+                    <div class="row mb-3">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Ville">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Code postal">
+                        </div>
+                    </div>
+                </div>
+            
+                <button type="button" id="btnn" class="btn btn" (click)="prevStep()">Retour</button>
+                <button type="button" id="btnn2" class="btn btn" (click)="nextStep()">Suivant ></button>
+            </div>
+            
+
+            <!-- Step 4 -->
+            <div class="step" [class.active]="currentStep === 4">
+                <h4>Personne de contact</h4>
+                <div class="row mb-3">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Prénom">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Nom">
+                    </div>
+                </div>
+                <input type="text" class="form-control mb-3" placeholder="Numéro de téléphone">
+                <input type="email" class="form-control mb-3" placeholder="Adresse e-mail">
+                <button type="button" id="btnn"class="btn btn" (click)="prevStep()">Retour</button>
+                <button type="button" id="btnn2" class="btn btn" (click)="nextStep()">Suivant ></button>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="step" [class.active]="currentStep === 5">
+                <h4>Votre message a bien été envoyé. Nous vous contacterons dans les meilleurs délais.</h4>
+                <button type="button" id="btnn" class="btn btn" (click)="prevStep()">Retour au formulaire</button>
+              </div>
+        </form>
+ 
+</section>

@@ -1,0 +1,40 @@
+.banner-section{
+    height: 80vh !important;
+    width: 100%;
+}
+
+
+.title{
+    background-color: rgba(235, 110, 131, 0.803);
+    width: fit-content;
+    font-size: 43px;
+}
+
+.banner-row{
+    transform: translateX(-6%);
+    transform: translateY(180%);
+}
+
+
+.heading-description{
+    text-align: left !important; color: black;
+}
+
+.link-div{
+    margin-bottom: -15px;
+}
+
+.more-spn{
+    border-bottom: 1px solid black;
+}
+
+.more-spn a:hover{
+    color: rgb(245, 109, 132);
+    font-weight: bold;
+    transition: 0.2s;
+
+}
+
+.fa-angle-right{
+margin-right: 12px;
+}

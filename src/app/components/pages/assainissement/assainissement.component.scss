@@ -1,0 +1,125 @@
+.banner-section{
+    height:80vh !important;
+}
+
+
+.title{
+    background-color: rgb(209, 68, 141);
+ 
+}
+
+#banner{
+    background-color: rgb(209, 68, 141); padding: 0; margin: 0; width: fit-content;
+    transform: translateY(380%) !important;
+    color:white
+    
+
+}
+#ic{
+   font-size: 80px; color:rgb(209, 68, 141);
+    margin-right: 20px;
+}
+.step {
+    display: none;
+}
+.step.active {
+    display: block;
+}
+.stepper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.stepper .step-number {
+    background-color: lightgray;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+.stepper .step-number.active {
+    background-color: rgb(209, 68, 141);
+}
+.stepper .line {
+    flex-grow: 1;
+    height: 2px;
+    background-color: lightgray;
+    margin-top: 20px;
+}
+.stepper .line.active {
+    background-color: rgb(209, 68, 141);
+}
+.step-number {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.step-number.active {
+    background-color: rgb(209, 68, 141); /* Color for completed steps */
+}
+
+.step-number.current {
+    background-color: blue; /* Color for the current step */
+}
+
+.line {
+    height: 2px;
+    flex-grow: 1;
+    background-color: grey;
+    margin: 0 5px;
+}
+#scal{
+   color:black
+}
+// p,
+// label {
+//   font:
+//     1rem 'Fira Sans',
+//     sans-serif;
+// }
+
+input {
+  margin: 0.4rem;
+}
+#btnn{
+    background-color:black ;
+    color: white;
+}
+#btnn2{
+    background-color:rgb(209, 68, 141); 
+   
+}
+.line.active {
+    background-color: rgb(209, 68, 141);
+}
+
+#pp{
+    max-width: 600px; text-align: justify;
+}
+.contentt-1{
+    font-size: 18px;
+}
+
+.img-sec{
+    background-image: url(https://wallpapercave.com/wp/wp6056707.jpg);
+     height: 75vh; 
+     background-size: cover;
+}
+
+.blog-h5{
+margin-top: 25px; text-align: left;
+}
+
+.blog-p{
+    text-align: left; margin-top: 25px;
+}

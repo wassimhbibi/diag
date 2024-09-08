@@ -1,0 +1,73 @@
+#py-5 {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    transform: translateY(0%);
+}
+
+#icon {
+    background-color: rgb(209, 68, 141);
+}
+
+#footer {
+    transform: translateY(20%); /* Adjusted transform */
+}
+.py-3 {
+    border-top: 1px solid white; /* Re-add the border line */
+    padding-top: 20px; /* Add space above the line */
+    margin-top: 20px; /* Optional: Adds space before the entire section */
+}
+.container {
+    padding: 15 !important;
+    margin: 0 !important;
+    max-width: 100% !important; /* Ensure container is full-width */
+}
+
+.row {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+footer .col-lg-3, footer .col-lg-9 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+footer {
+    width: 100%;  /* Ensure the footer takes full width */
+    padding: 0;
+    margin: 0;
+    height: auto; /* Ensure the footer doesn’t stretch */
+    overflow: hidden; /* Avoid overflow pushing content */
+}
+
+.footer-icon {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of the items */
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.footer-icon li {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    margin-bottom: 10px; /* Space between items */
+}
+
+.footer-icon li:not(:last-child)::after {
+
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}

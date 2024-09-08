@@ -1,0 +1,114 @@
+.banner-section{
+    height: 80vh !important;
+}
+#banner{
+    background-color: rgb(209, 68, 141); padding: 0; margin: 0; width: fit-content;
+    transform: translateY(380%) !important;
+
+}
+
+.diagnostics-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .image-container {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .text-container {
+    flex: 1;
+    max-width: 50%;
+    padding-left: 20px;
+  }
+  
+  .text-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .text-container p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  @media (max-width: 768px) {
+    .diagnostics-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .image-container,
+    .text-container {
+      max-width: 100%;
+      padding-left: 0;
+    }
+  
+    .text-container {
+      margin-top: 20px;
+    }
+  }
+  .accordion-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .diagnostic-column {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .diagnostic-column:last-child {
+    margin-right: 0;
+  }
+  
+  .diagnostic-column h3 {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .acc-card {
+    background-color: #f1f1f1;
+    border: none;
+  }
+  
+  .acc-card .card-header {
+    background-color: #f1f1f1;
+  }
+  
+  .acc-card .card-header .btn {
+    color: #000;
+  }
+  
+  .acc-card .card-body {
+    padding: 15px;
+    background-color: #fff;
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0;
+  }
+  
+  a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #000;
+    text-decoration: underline;
+  }
+  
+  
